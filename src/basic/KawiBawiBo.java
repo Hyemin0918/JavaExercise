@@ -41,10 +41,33 @@ public class KawiBawiBo {
             System.out.println("Input allowed only : 가위, 바위, 보");
             return;
         }
-
-        // TODO: determine who win using if/else
-
-        // output will be one of :
+        if(bob.equals("가위")){
+            if(alice.equals("가위")) {
+                System.out.println("Tie!");
+            }else if(alice.equals("바위")){
+                System.out.println("Alice win!");
+            }else{
+                System.out.println("Bob win!");
+            }
+        }
+        if(bob.equals("바위")){
+            if(alice.equals("가위")) {
+                System.out.println("Bob win!");
+            }else if(alice.equals("바위")){
+                System.out.println("Tie!");
+            }else{
+                System.out.println("Alice win!");
+            }
+        }
+        if(bob.equals("보")){
+            if(alice.equals("가위")) {
+                System.out.println("Alice win!");
+            }else if(alice.equals("바위")){
+                System.out.println("Bob win!");
+            }else{
+                System.out.println("Tie!");
+            }
+        }
         System.out.println("Alice win!");
         System.out.println("Bob win!");
         System.out.println("Tie!");
